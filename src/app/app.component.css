@@ -1,0 +1,27 @@
+.page {
+  padding: 2.5rem;
+  background-color: rgb(3 26 65);
+  color: white;
+}
+
+.file-selector {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.upload-button:hover {
+  background-color: rgb(3, 36, 94);
+}
+
+.card {
+  margin-left: 3rem;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 30rem;
+}
