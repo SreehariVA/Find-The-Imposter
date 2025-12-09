@@ -87,13 +87,9 @@ export class IgService {
   }
 
   private parseFollowingJson(jsonContent: string): any[] {
-    try {
-      const parsedData = JSON.parse(jsonContent);
-      const followingData = parsedData.relationships_following || [];
-      return followingData;
-    } catch (error) {
-      throw new Error('Error parsing following.json: ');
-    }
+    const parsedData = JSON.parse(jsonContent);
+  const followingData = parsedData.relationships_following || [];
+  return followingData;
   }
 
   public extractNonFollowingBackAndNonFollowersBack(
